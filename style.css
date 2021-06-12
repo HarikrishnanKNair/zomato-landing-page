@@ -24,7 +24,7 @@ body{
     width: 100%;
 }
 
-.nav__item{
+.button__primary{
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -33,9 +33,69 @@ body{
     );
     color: #fff;
     border: none;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.container{
+    padding: 20px;
+}
+
+.hero__container{
+    width: 100%;
+}
+
+.hero__image__container{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.hero__image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero__description{
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.hero__text{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.food__menu__container{
+    width: 100%;
+}
+
+.food__menu{
+    width: 100%;
+}
+
+.food__menu__text{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.food__card__container{
+    width: 100%;
+}
+
+.food__card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.food__image__1,.food__image__2,.food__image__3{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
