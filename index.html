@@ -35,44 +35,49 @@
                 </div> 
             </section>
             <!--Explore Menu-->
-            <section>
-                <div class="food__menu__container">
-                    <div class="food__menu">
-                        <h1 class="food__menu__text">Explore Our Menu</h1>
-                    </div>
-                    <div class="food__card__container">
-                        <div class="food__card">
-                            <div>
-                                <img src="./assets/burger.jpg" alt="Burger" class="food__image__1"/>
-                            </div>
-                            <div class="food__card__description">
-                                <h2>Burgers</h2>
-                                <h3>Burger King, Mcdonalds, Burger Place <span>+3</span></h3>
-                            </div>
+            <section class="explore__menu__container">
+                <h1 class="explore__menu__text">Explore Our Menu</h1>
+                <div class="explore__menu__gradient__bg"></div>   
+                <div class="explore__menu__lists">
+                    <!--Burger-->
+                    <div class="food__card">
+                        <div class="food__card__image__container">
+                            <img src="./assets/burger.jpg" alt="Burger" class="food__image"/>
                         </div>
-                        <div class="food__card">
-                            <div>
-                                <img src="./assets/pizza.jpg" alt="Pizza" class="food__image__2" />
-                            </div>
-                            <div class="food__card__description">
-                                <h2>Pizza</h2>
-                                <h3>Pizza Hut, Domino's Pizza <span>+3</span></h3>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <div>
-                                <img src="./assets/iceCream.jpg" alt="iceCream" class="food__image__3" />
-                            </div>
-                            <div class="food__card__description">
-                                <h2>Ice Creams</h2>
-                                <h3>Baskin Robins, Ibaco <span>+3</span></h3>
-                            </div>
+                        <div class="food__card__description">
+                            <h3 class="food__title">Burgers</h3>
+                            <p>Burger King, Mcdonalds, Burger Place <span style="color: red;">+3</span></p>
                         </div>
                     </div>
+                    <!--Pizza-->
+                    <div class="food__card" id="pizza__card">
+                        <div class="food__card__image__container">
+                            <img src="./assets/pizza.jpg" alt="Pizza" class="food__image" />
+                        </div>
+                        <div class="food__card__description">
+                            <h3 class="food__title">Pizza</h3>
+                            <p>Pizza Hut , Dominos <span style="color: red;">+3</span></p>
+                        </div>
+                    </div>
+                    <!--IceCream-->
+                    <div class="food__card">
+                        <div class="food__card__image__container">
+                            <img src="./assets/iceCream.jpg" alt="iceCream" class="food__image" />
+                        </div>
+                        <div class="food__card__description">
+                            <h3 class="food__title">IceCreams</h3>
+                            <p>Baskin Robins , Ibaco <span style="color: red;">+3</span></p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="explore__menu__view__more">
                     <button class="button__primary">View More</button>
                 </div>
             </section>
-        </main>
+            <!--Restaurants-->
+            <section>
 
+            </section>
+        </main>
     </body>
 </html>
