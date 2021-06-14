@@ -13,6 +13,7 @@ body{
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+    padding-bottom: 150px;
 }
 
 .header{
@@ -108,7 +109,7 @@ body{
 .food__card{
     background-color: #fff;
     border-radius: 8px 8px 0 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 10px ;
 }
 
@@ -156,6 +157,55 @@ body{
     border: solid pink;
     border-radius: 10px;
 }
+.quote__container{
+    width: 100%;
+    position: relative;
+    display: flex;    
+    align-items: center;
+    margin-top: 100px;
+}
+.quote__text{
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    padding: 0 5px;
+}
+.quote__img__container{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+.quote__img{
+    width: 100%;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.footer__container{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border-radius: 20px 20px 0 0 ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer__logo__container{
+    width: 100%;
+}
+.footer__logo{
+    width: 100%;
+    filter: brightness(0) invert(1)
+}
+.footer__lists{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 80px;
+}
 
     /*GRID USING FLEX BOX*/
 .restaurant__images__container{
@@ -194,7 +244,18 @@ body{
     margin-bottom: 25px;
     text-align: center;
 }
+.quote__container{
+    width: 100%;
+    position: relative;
+}
 
+.quote__container {
+  position: relative;
+  display: flex;
+}
+.quote_image_container {
+  position: absolute;
+}
 
 @media (min-width: 768px) {
     .navbar{
