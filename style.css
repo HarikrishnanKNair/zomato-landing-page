@@ -61,38 +61,38 @@ body{
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button__primary:hover{
     border: 2px solid blue;
 }
 
-.hero__container{
-    width: 100%;
+.hero__image__container {
+  position: relative;
+  width: 100%;
 }
 
-.hero__image__container{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.hero__image__shape {
+  position: absolute;
+  right: 2;
 }
 
-.hero__image{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 25px 20px -12px rgba(0,0,0,0.25);
+.hero__image {
+  position: absolute;
+  width: 100%;
+  right: auto;
+  left: auto;
+  z-index: 2;
+  border-radius: 6px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.hero__description{
-    width: 100%;
-    margin-bottom: 70px;
-}
-
-.hero__text{
-    font-size: 30px;
-    margin-bottom: 5px;
+.hero__text {
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .explore__menu__text{
@@ -166,7 +166,7 @@ body{
 }
 .quote__text{
     width: 100%;
-    color:#fff;
+    color: #fff;
     text-align: center;
     padding: 0 5px;
 }
@@ -178,7 +178,7 @@ body{
 .quote__img{
     width: 100%;
     border-radius: 20px;
-    opacity: 80%;
+    opacity: 70%;
 }
 .footer__container{
     background-image: linear-gradient(
@@ -192,19 +192,31 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 .footer__logo__container{
     width: 100%;
+    
 }
 .footer__logo{
     width: 100%;
+    margin-top: -30px;
+    margin-bottom: 30px;
     filter: brightness(0) invert(1)
 }
 .footer__lists{
     width: 100%;
     font-size: 20px;
     padding-left: 80px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+.quote__container{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.quote_image_container {
+  position: absolute;
 }
 
     /*GRID USING FLEX BOX*/
@@ -244,18 +256,7 @@ body{
     margin-bottom: 25px;
     text-align: center;
 }
-.quote__container{
-    width: 100%;
-    position: relative;
-}
 
-.quote__container {
-  position: relative;
-  display: flex;
-}
-.quote_image_container {
-  position: absolute;
-}
 
 @media (min-width: 768px) {
     .navbar{
@@ -322,13 +323,52 @@ body{
         width: 100%;
         font-size: 30px;
     }
+    .stay__updated__container{
+        width: 100%;
+    } 
     .stay__updated__input__email{
         width: 50%;
+        height: 50px;
     }
     .stay__updated__text{
         font-size: 30px;
         text-align: center;
     }
+    .quote__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .quote__img__container{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .quote__img{
+        width: 100%;
+        height: 350px;
+    }
+    .quote__text{
+        width: 100%;
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 100px;
+    }
+    .footer__container{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: -100px;
+    }
+    .footer__logo__container{
+        width: 100%;
+    }
+    .footer__lists{
+        width: 100%;
+        padding-top: 100px;
+    }
+       
 }
 
 @media (min-width: 1020px) {
@@ -347,7 +387,7 @@ body{
         padding-bottom: 80px;
     }
     .hero__text{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .hero__image{
@@ -370,11 +410,17 @@ body{
         margin-bottom: 50px;
     }
     .explore__menu__text{
-        font-size: 30px;
+        font-size: 40px;
     }
     .restaurant__container{
         margin: 45px 0;
     }
+    
+    .footer__lists{
+        font-size: 30px;
+        padding-top: 100px;
+    }
+
 }
 
 @media(min-width: 1400px){
